@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>484</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>484</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProject">
+    <property name="title">
+     <string>Project</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionPan_Map"/>
+   </widget>
+   <widget class="QMenu" name="menuLayer">
+    <property name="title">
+     <string>Layer</string>
+    </property>
+    <widget class="QMenu" name="menuCreate_Layer">
+     <property name="title">
+      <string>Create Layer</string>
+     </property>
+     <addaction name="actionView_Shafile_Layer"/>
+    </widget>
+    <addaction name="menuCreate_Layer"/>
+    <addaction name="actionToggle_Eddting"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionAdd_Feature"/>
+   </widget>
+   <addaction name="menuProject"/>
+   <addaction name="menuView"/>
+   <addaction name="menuLayer"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPan_Map"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>true</bool>
+   </attribute>
+   <addaction name="actionView_Shafile_Layer"/>
+   <addaction name="actionToggle_Eddting"/>
+   <addaction name="actionAdd_Feature"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_5"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/folder.svg</normaloff>images/folder.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionPan_Map">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/hello.svg</normaloff>images/hello.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Pan Map</string>
+   </property>
+  </action>
+  <action name="actionView_Shafile_Layer">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/line-chart.svg</normaloff>images/line-chart.svg</iconset>
+   </property>
+   <property name="text">
+    <string>View Shapefile Layer</string>
+   </property>
+  </action>
+  <action name="actionAdd_Feature">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/circle.svg</normaloff>images/circle.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Add Point Feature</string>
+   </property>
+  </action>
+  <action name="actionToggle_Eddting">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/pencil.svg</normaloff>images/pencil.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Toggle Eddting</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

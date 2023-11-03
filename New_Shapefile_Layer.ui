@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>652</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>571</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>File Name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QgsExternalResourceWidget" name="mQgsExternalResourceWidget"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>File Encoding</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QgsCheckableComboBox" name="mComboBox">
+      <item>
+       <property name="text">
+        <string>UTF-8</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Geometry Type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QgsCheckableComboBox" name="mComboBox_2">
+      <item>
+       <property name="text">
+        <string>No Geometry</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Point</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>MultiPoint</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LineString</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Polygon</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Additional dimension</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton">
+        <property name="text">
+         <string>Z( +M values)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="text">
+         <string>M values</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="1">
+     <widget class="QgsProjectionSelectionWidget" name="mQgsProjectionSelectionWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>571</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>New Fields</string>
+   </property>
+   <widget class="QWidget" name="formLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>571</width>
+      <height>123</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>Name</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QgsFilterLineEdit" name="mLineEdit_10">
+       <property name="qgisRelation" stdset="0">
+        <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QgsCheckableComboBox" name="mComboBox_6">
+       <item>
+        <property name="text">
+         <string>Test (String)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Interger(32 bit)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Decimal( Double)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Date</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QLabel" name="label_19">
+         <property name="text">
+          <string>Length</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QgsFilterLineEdit" name="mLineEdit_11">
+         <property name="qgisRelation" stdset="0">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_20">
+         <property name="text">
+          <string>Precision</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QgsFilterLineEdit" name="mLineEdit_12">
+         <property name="qgisRelation" stdset="0">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>Add to Fields List</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>350</y>
+     <width>581</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Fields List</string>
+   </property>
+   <widget class="QWidget" name="formLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>571</width>
+      <height>89</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_3">
+     <item row="0" column="0" colspan="2">
+      <widget class="QTableWidget" name="tableWidget_4">
+       <column>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Type</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Length</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Precision</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>480</y>
+     <width>193</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsCheckableComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgscheckablecombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsExternalResourceWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsexternalresourcewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsFilterLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qgsfilterlineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsProjectionSelectionWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsprojectionselectionwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
